@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Filmes e Séries</title>
+</head>
+<body>
+
+    <form id="formFilme">
+        <label for="nomeBr">Nome do filme no Brasil:</label>
+        <input type="text" id="nomeBr" name="nomeBr" required>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label for="nomeOriginal">Nome do filme no original:</label>
+        <input type="text" id="nomeOriginal" name="nomeOriginal" required>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label for="diretor">Nome do diretor:</label>
+        <input type="text" id="diretor" name="diretor" required>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label for="dataEstreia">Data de estreia no cinema:</label>
+        <input type="date" id="dataEstreia" name="dataEstreia" required>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label>Classificação Indicativa:</label>
+        <input type="radio" id="livre" name="classificacao" value="Livre" required>
+        <label for="livre">Livre</label><br>
+        <input type="radio" id="10" name="classificacao" value="10">
+        <label for="10">Não recomendado para menores de 10 anos</label><br>
+        <input type="radio" id="12" name="classificacao" value="12">
+        <label for="12">Não recomendado para menores de 12 anos</label><br>
+        <input type="radio" id="14" name="classificacao" value="14">
+        <label for="14">Não recomendado para menores de 14 anos</label><br>
+        <input type="radio" id="16" name="classificacao" value="16">
+        <label for="16">Não recomendado para menores de 16 anos</label><br>
+        <input type="radio" id="18" name="classificacao" value="18">
+        <label for="18">Não recomendado para menores de 18 anos</label>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione um gênero</option>
+            <option value="aventura">Aventura</option>
+            <option value="acao">Ação</option>
+            <option value="animacao">Animação</option>
+            <option value="romance">Romance</option>
+            <option value="musical">Musical</option>
+            <option value="suspense">Suspense</option>
+            <option value="terror">Terror</option>
+            <option value="ficcao">Ficção científica</option>
+        </select>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <label>Idiomas de áudio disponíveis:</label>
+        <input type="checkbox" id="ingles" name="idiomas" value="ingles">
+        <label for="ingles">Inglês</label><br>
+        <input type="checkbox" id="portugues" name="idiomas" value="portugues">
+        <label for="portugues">Português</label><br>
+        <input type="checkbox" id="espanhol" name="idiomas" value="espanhol">
+        <label for="espanhol">Espanhol</label><br>
+        <input type="checkbox" id="outros" name="idiomas" value="outros">
+        <label for="outros">Outros</label>
+        <span class="error-message">Campo com preenchimento obrigatório</span>
+
+        <input type="checkbox" id="termo" name="termo">
+        <label for="termo">Filme liberado para streaming</label><br>
+
+        <button type="submit" id="submitBtn" disabled>Cadastrar</button>
+    </form>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
